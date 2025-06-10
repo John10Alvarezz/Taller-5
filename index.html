@@ -1,0 +1,188 @@
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>
+        AeroVia Express
+    </title>
+    <script src="https://cdn.tailwindcss.com">
+    </script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <style>
+        /* Fuente de la página*/
+        body {
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-white">
+    <!-- Barra de navegación -->
+    <nav class="bg-[#0c2a5a] flex items-center justify-between px-4 sm:px-6 md:px-8 py-3">
+        <!-- Lista de enlaces del menú -->
+        <ul class="flex items-center space-x-6 text-white text-sm font-normal">
+            <li class="font-semibold">
+                AeroVia Express
+            </li>
+            <li class="cursor-pointer hover:underline">
+                Ofertas y destinos
+                <i class="fas fa-caret-down text-white text-xs">
+                </i>
+            </li>
+            <li class="cursor-pointer hover:underline">
+                Mis viajes
+                <i class="fas fa-caret-down text-white text-xs">
+                </i>
+            </li>
+            <li class="cursor-pointer hover:underline">
+                Centro de ayuda
+            </li>
+            <li class="cursor-pointer hover:underline">
+                Estado de vuelo
+            </li>
+        </ul>
+        <!-- Botón de iniciar sesión -->
+        <button
+            class="bg-[#3f4f7f] text-white text-sm font-normal rounded-full px-4 py-1.5 hover:bg-[#5a6a9f] transition-colors"
+            type="button">
+            Iniciar Sesión
+        </button>
+    </nav>
+    <!-- Sección principal con imagen -->
+    <section class="flex flex-col md:flex-row max-w-7xl mx-auto mt-4 rounded-md overflow-hidden">
+        <!-- Texto promocional con fondo turquesa -->
+        <div class="bg-[#5bc9c9] flex-1 p-6 md:p-10">
+            <h1 class="text-2xl md:text-3xl font-normal mb-2">
+                ¡Vacaciones de verano!
+            </h1>
+            <p class="text-sm md:text-base mb-2 font-normal">
+                Vuela por Chile y Sudamérica con hasta
+                <span class="font-semibold">
+                    40% de descuento
+                </span>
+            </p>
+            <p class="text-sm md:text-base mb-4 font-normal">
+                Encuenta paquetes, hoteles, seguros y arriendo de autos en AeroVia Express
+            </p>
+            <!-- Enlace para compra -->
+            <a class="text-blue-600 text-sm md:text-base font-normal hover:underline" href="#">
+                Compra aquí
+            </a>
+        </div>
+        <!-- Imagen decorativa  -->
+        <div class="flex-1">
+            <img alt="Island with canoe in blue water and blue sky" class="w-full h-full object-cover rounded-md"
+                height="200" src="img/polynesia.jpg" width="600" />
+        </div>
+    </section>
+    <!-- Contenedor para selección de vuelo y opciones -->
+    <section class="max-w-7xl mx-auto mt-6 bg-white rounded-lg shadow-md p-4 md:p-6">
+        <!-- Pestañas de categorías -->
+        <ul class="flex space-x-2 text-xs md:text-sm font-normal text-gray-800 mb-4">
+            <li>
+                <button
+                    class="border border-gray-300 rounded-md px-3 py-1 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    type="button">
+                    Vuelos
+                </button>
+            </li>
+            <li>
+                <button
+                    class="border border-gray-300 rounded-md px-3 py-1 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    type="button">
+                    Paquetes
+                </button>
+            </li>
+            <li>
+                <button
+                    class="border border-gray-300 rounded-md px-3 py-1 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    type="button">
+                    Hoteles
+                </button>
+            </li>
+            <li>
+                <button
+                    class="border border-gray-300 rounded-md px-3 py-1 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    type="button">
+                    Autos
+                </button>
+            </li>
+            <li>
+                <button
+                    class="border border-gray-300 rounded-md px-3 py-1 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    type="button">
+                    Seguros
+                </button>
+            </li>
+            <li>
+                <button
+                    class="border border-gray-300 rounded-md px-3 py-1 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    type="button">
+                    Upgrade
+                </button>
+            </li>
+        </ul>
+        <!-- Opciones desplegables para tipo de vuelo, clase y pasajeros -->
+        <div class="flex flex-wrap gap-6 text-xs md:text-sm font-normal text-gray-800 mb-4">
+            <div class="cursor-pointer select-none flex items-center space-x-1">
+                <span>
+                    Ida y Vuelta
+                </span>
+                <i class="fas fa-caret-down text-gray-800 text-xs">
+                </i>
+            </div>
+            <div class="cursor-pointer select-none flex items-center space-x-1">
+                <span>
+                    Economy
+                </span>
+                <i class="fas fa-caret-down text-gray-800 text-xs">
+                </i>
+            </div>
+            <div class="cursor-pointer select-none flex items-center space-x-1">
+                <span>
+                    1 pasajero
+                </span>
+                <i class="fas fa-caret-down text-gray-800 text-xs">
+                </i>
+            </div>
+        </div>
+        <!-- Formulario con campos de origen, destino, fechas y botón buscar -->
+        <form class="flex flex-wrap items-center gap-4 text-xs md:text-sm font-normal text-gray-800">
+            <!-- Campo de texto para origen -->
+            <input
+                class="border border-gray-300 rounded-md px-3 py-2 w-24 md:w-32 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                placeholder="Origen" type="text" />
+            <!-- Campo de texto para destino -->
+            <input
+                class="border border-gray-300 rounded-md px-3 py-2 w-24 md:w-32 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                placeholder="Destino" type="text" />
+            <!-- Etiqueta para fecha de ida -->
+            <label class="flex items-center space-x-2">
+                <span class="border border-gray-300 rounded-md px-3 py-2 bg-white cursor-default select-none">
+                    Fecha Ida
+                </span>
+            </label>
+            <!-- Campo deshabilitado para fecha de ida -->
+            <input
+                class="border border-gray-300 rounded-md px-3 py-2 w-24 md:w-32 placeholder-gray-400 bg-gray-200 cursor-not-allowed"
+                disabled="" placeholder="dd-mm-aaaa" type="text" />
+            <!-- Etiqueta para fecha de vuelta -->
+            <label class="flex items-center space-x-2">
+                <span class="border border-gray-300 rounded-md px-3 py-2 bg-white cursor-default select-none">
+                    Fecha Vuelta
+                </span>
+            </label>
+            <!-- Campo deshabilitado para fecha de vuelta -->
+            <input
+                class="border border-gray-300 rounded-md px-3 py-2 w-24 md:w-32 placeholder-gray-400 bg-gray-200 cursor-not-allowed"
+                disabled="" placeholder="dd-mm-aaaa" type="text" />
+            <!-- Botón para buscar vuelos -->
+            <button class="bg-red-600 text-white rounded-md px-4 py-2 hover:bg-red-700 transition-colors" type="submit">
+                Buscar
+            </button>
+        </form>
+    </section>
+</body>
+
+</html>
