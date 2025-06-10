@@ -32,7 +32,7 @@ El diseño replica fielmente:
 - Estructura Readme
 
 ## URL de Producción
-[Agregar URL cuando esté desplegado]
+https://teclab.uct.cl/~john.alvarez/Semanas/Semana%207/Taller5.html
 
 ---
 *Desarrollado exclusivamente con Bootstrap 5 - Sin frameworks adicionales*
